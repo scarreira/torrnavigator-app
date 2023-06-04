@@ -6,3 +6,5 @@ It is made in electron, because my first tought was to make it a webpage that ev
 I do not usually code in electron so beaware of bad code. I also used the default dashboard sample from boostrap.
 
 Hope you enjoy.
+
+Bin at https://github.com/scarreira/torrnavigator-app/releases
