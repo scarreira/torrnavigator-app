@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.112.5" />
+    <title>Settings - Torrnavigator</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white d-md-flex d-none" href="#">Settings</a>
+
+      <ul class="navbar-nav flex-row d-md-none">
+        <li class="nav-item text-nowrap">
+          <button
+            class="nav-link px-3 text-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebarMenu"
+            aria-controls="sidebarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+        </li>
+      </ul>
+
+      <div id="navbarSearch" class="navbar-search w-100">
+        <input class="form-control w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search" id="search" />
+      </div>
+      <div class="vr mx-md-2 d-md-block d-none" style="color: gray"></div>
+      <select id="category" class="form-select" aria-label="Category select">
+        <option value="null">Select category</option>
+      </select>
+    </header>
+
+    <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+      <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sidebarMenuLabel">Settings</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" aria-current="page" href="index.html">
+                <i class="bi bi-magnet-fill"></i>
+                Torrents
+              </a>
+            </li>
+          </ul>
+
+          <hr class="my-3" />
+
+          <ul class="nav flex-column mb-auto">
+            <li class="nav-item active">
+              <a class="nav-link d-flex align-items-center gap-2 active" href="#">
+                <i class="bi bi-gear-fill"></i>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-3">
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="formFile" class="form-label"><span id="databaseExists"></span></label>
+                <input class="form-control" type="file" id="databaseFile" accept=".db,.sqlite" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <button type="button" class="btn btn-dark" id="saveDatabaseBtn">Save</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="./js/setup.js"></script>
+    <script>
+      $("#saveDatabaseBtn").click(function (e) {
+        const path = document.getElementById("databaseFile").files[0].path;
+        pathChecker = path.split(".");
+        if (pathChecker[pathChecker.length - 1] != "db" && pathChecker[pathChecker.length - 1] != "sqlite") {
+          alert("Invalid database file, please choose a .db or .sqlite file");
+          return false;
+        }
+
+        setDatabase(path);
+        alert("Path saved");
+        return true;
+      });
+    </script>
+  </body>
+</html>
