@@ -1,32 +1,38 @@
 {
-  "name": "torrnavigator-app",
-  "version": "1.0.0",
-  "description": "A easy to use database browser",
-  "main": "index.js",
-  "scripts": {
-    "start": "electron-forge start",
-    "build": ".\\node_modules\\.bin\\electron-rebuild",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
-  },
-  "author": "CodeCarreira.com",
-  "license": "GPL-3.0-or-later",
-  "devDependencies": {
-    "@electron-forge/cli": "^6.1.1",
-    "@electron-forge/maker-deb": "^6.1.1",
-    "@electron-forge/maker-rpm": "^6.1.1",
-    "@electron-forge/maker-squirrel": "^6.1.1",
-    "@electron-forge/maker-zip": "^6.1.1",
-    "electron": "^25.0.1",
-    "electron-rebuild": "^3.2.9"
-  },
-  "dependencies": {
-    "better-sqlite3": "^8.4.0",
-    "bootstrap": "^5.3.0",
-    "bootstrap-icons": "^1.10.5",
-    "electron-squirrel-startup": "^1.0.0",
-    "electron-store": "^8.1.0",
-    "jquery": "^3.7.0"
-  }
+    "name": "torrnavigator-app",
+    "version": "1.0.1",
+    "description": "A easy to use database browser",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron-forge start",
+        "build": ".\\node_modules\\.bin\\electron-rebuild",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "package": "electron-forge package",
+        "make": "electron-forge make"
+    },
+    "author": "CodeCarreira.com",
+    "license": "GPL-3.0-or-later",
+    "devDependencies": {
+        "@electron-forge/cli": "^6.1.1",
+        "@electron-forge/maker-deb": "^6.1.1",
+        "@electron-forge/maker-rpm": "^6.1.1",
+        "@electron-forge/maker-squirrel": "^6.1.1",
+        "@electron-forge/maker-zip": "^6.1.1",
+        "electron": "^25.0.1",
+        "electron-rebuild": "^3.2.9"
+    },
+    "dependencies": {
+        "better-sqlite3": "^8.4.0",
+        "bootstrap": "^5.3.0",
+        "bootstrap-icons": "^1.10.5",
+        "electron-squirrel-startup": "^1.0.0",
+        "electron-store": "^8.1.0",
+        "jquery": "^3.7.0"
+    },
+    "files": [
+        "*.js",
+        "build",
+        "node_modules"
+    ]
+
 }
