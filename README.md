@@ -7,4 +7,6 @@ I do not usually code in electron so beaware of bad code. I also used the defaul
 
 Hope you enjoy.
 
+Credit to reddit user: xrmb for the database
+
 Bin at https://github.com/scarreira/torrnavigator-app/releases
