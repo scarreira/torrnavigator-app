@@ -12,4 +12,4 @@ Credit to reddit user: xrmb for the database
 Bin at https://github.com/scarreira/torrnavigator-app/releases
 
 
-[<img alt="buy me a coffe" width="40px" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" />]([https://www.google.com/](https://www.buymeacoffee.com/codecarreira)https://www.buymeacoffee.com/codecarreira)
+![](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png =60x217)([https://www.buymeacoffee.com/codecarreira)https://www.buymeacoffee.com/codecarreira])
