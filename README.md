@@ -15,4 +15,4 @@ Bin at https://github.com/scarreira/torrnavigator-app/releases
 ![](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png =60x217)([https://www.buymeacoffee.com/codecarreira)https://www.buymeacoffee.com/codecarreira])
 
 
-[![name](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/codecarreira)
+[![name](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png) =60x217](https://www.buymeacoffee.com/codecarreira)
