@@ -11,4 +11,4 @@ Credit to reddit user: xrmb for the database
 
 Bin at https://github.com/scarreira/torrnavigator-app/releases
 
-[![name](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/codecarreira){:target="_blank" rel="noopener"}
+[![name](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/codecarreira{:target="_blank" rel="noopener"})
